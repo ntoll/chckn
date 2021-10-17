@@ -24,6 +24,8 @@ Chicken _chicken chicken chicken chicken_. ;-)
 
 ## Chicken tutorial 🥚
 
+![Chicken chicken chicken chicken chicken chicken](chicken.gif)
+
 Chicken chicken chicken **chicken chicken** chicken chicken:
 
 ```
