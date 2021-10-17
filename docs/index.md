@@ -11,6 +11,9 @@
     :members:
 ```
 
+```{include} ../CODE_OF_CONDUCT.md
+```
+
 ```{include} ../CHANGES.md
 ```
 
