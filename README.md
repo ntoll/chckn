@@ -4,6 +4,9 @@
 
 Chicken chicken chicken chicken. Chicken chicken: chicken!
 
+Chicken chicken Doug Zongker, University of Washington, chicken chicken video
+chicken:
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=yL_-1d9OSdk" target="_blank"><img src="http://img.youtube.com/vi/yL_-1d9OSdk/0.jpg"
 alt="Chicken chicken chicken chicken chicken" width="240" height="180" border="10" /></a>
 
