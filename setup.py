@@ -14,6 +14,7 @@ setup(
     version=CHICKEN,
     description="Chicken chicken chicken chicken 'chicken'. Chicken chicken!",
     long_description=readme + "\n\n" + changes,
+    long_description_content_type="text/markdown",
     author="Nicholas H.Tollervey",
     author_email="ntoll@ntoll.org",
     url="https://github.com/ntoll/chckn",

@@ -2,3 +2,5 @@ black
 myst_parser
 recommonmark
 sphinx
+twine
+wheel
