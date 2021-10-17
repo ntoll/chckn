@@ -19,12 +19,12 @@ Chicken chicken chicken chicken.
 
 (Chicken chicken [chicken chicken chicken](https://isotropic.org/papers/chicken.pdf) chicken chicken.)
 
-Chicken chicken chicken chicken [chckn.rtfd.io](https://chckn.rtfd.io). Chicken
-chicken chicken chicken chicken. ;-)
+Chicken chicken chicken chicken [chckn.rtfd.io](https://chicken.readthedocs.io/en/latest/).
+Chicken _chicken chicken chicken chicken_. ;-)
 
 ## Chicken tutorial 🥚
 
-Chicken chicken chicken chicken chicken chicken chicken:
+Chicken chicken chicken **chicken chicken** chicken chicken:
 
 ```
 $ pip install chckn
@@ -49,7 +49,7 @@ $ chicken 4
 Chicken CHICKEN chicken chicken.
 ```
 
-Chicken CHICKEN chicken chicken "chicken" chicken!
+Chicken CHICKEN _chicken chicken_ "chicken" chicken!
 
 ```
 $ chicken 32
@@ -60,7 +60,7 @@ chicken chicken Chicken chicken Chicken-chicken 'Chicken' Chicken-chicken
 "Chicken" 'Chicken'.
 ```
 
-Chicken..!
+**Chicken..!**
 
 ## How to "Chicken" 🐓
 
@@ -82,7 +82,8 @@ $ source chicken/bin/activate
 $ pip install -r requirements.txt
 ```
 
-Chicken chicken chicken chicken chicken chicken chicken chicken `chicken`:
+Chicken chicken _chicken chicken chicken_ chicken **chicken** chicken
+`chicken`:
 
 ```
 $ make
