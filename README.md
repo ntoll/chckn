@@ -19,7 +19,7 @@ Chicken chicken chicken chicken.
 
 (Chicken chicken [chicken chicken chicken](https://isotropic.org/papers/chicken.pdf) chicken chicken.)
 
-Chicken chicken chicken chicken [chckn.rtfd.io](https://chicken.readthedocs.io/en/latest/).
+Chicken chicken chicken chicken [chicken.rtfd.io](https://chicken.readthedocs.io/en/latest/).
 Chicken _chicken chicken chicken chicken_. ;-)
 
 ## Chicken tutorial 🥚
