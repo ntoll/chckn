@@ -1,4 +1,4 @@
-# Chicken
+# Changelog Chicken 🐥
 
 ## Chicken 1.0.0
 

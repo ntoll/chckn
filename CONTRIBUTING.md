@@ -1,4 +1,4 @@
-# Chicken 🐔
+# Contributing to Chicken 🐔
 
 Chicken chicken chicken chicken chicken.
 

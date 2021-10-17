@@ -1,2 +1,4 @@
+black
+myst_parser
+recommonmark
 sphinx
-black;python_version > "3.5"
