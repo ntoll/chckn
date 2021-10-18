@@ -40,8 +40,8 @@ Chicken:
 
 ```
 $ chicken
-Chicken 'Chicken' CHICKEN CHICKEN Chicken Chicken Chicken chicken CHICKEN
-Chicken CHICKEN.
+Chicken 'Chicken' CHICKEN CHICKEN Chicken Chicken Chicken chicken
+CHICKEN Chicken CHICKEN.
 ```
 
 Chicken chicken chicken `chicken`:
@@ -55,11 +55,11 @@ Chicken CHICKEN _chicken chicken_ "chicken" chicken!
 
 ```
 $ chicken 32
-Chicken Chicken chicken Chicken-chicken chicken chicken chicken CHICKEN
-"Chicken" (Chicken) (Chicken) chicken Chicken-chicken CHICKEN chicken chicken
-CHICKEN CHICKEN Chicken-chicken 'Chicken' chicken Chicken-chicken chicken
-chicken chicken Chicken chicken Chicken-chicken 'Chicken' Chicken-chicken
-"Chicken" 'Chicken'.
+Chicken Chicken chicken Chicken-chicken chicken chicken chicken
+CHICKEN "Chicken" (Chicken) (Chicken) chicken Chicken-chicken
+CHICKEN chicken chicken CHICKEN CHICKEN Chicken-chicken 'Chicken'
+chicken Chicken-chicken chicken chicken chicken Chicken chicken
+Chicken-chicken 'Chicken' Chicken-chicken "Chicken" 'Chicken'.
 ```
 
 **Chicken..!**
