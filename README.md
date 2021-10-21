@@ -62,6 +62,18 @@ chicken Chicken-chicken chicken chicken chicken Chicken chicken
 Chicken-chicken 'Chicken' Chicken-chicken "Chicken" 'Chicken'.
 ```
 
+Chicken chicken, chicken CHICKEN "chicken" chicken:
+
+```
+$ chicken 🇫🇷
+Poulet poule (Poulet) poulet Poulet POULE poule poulet "Poule" poulet.
+```
+
+Chicken chicken "chicken":
+
+* 🇬🇧 (Chicken): chicken
+* 🇫🇷 (chicken 🐓): POULET
+
 **Chicken..!**
 
 ## How to "Chicken" 🐓
