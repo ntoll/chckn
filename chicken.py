@@ -39,9 +39,9 @@ __CHICKEN__ = f"{CHICKEN}.{EGG}.{CHICKEN}"
 
 #: Chicken chicken CHICKEN "chicken"
 _CHICKEN = [
+    "Chicken",
     "CHICKEN",
     "chicken",
-    "Chicken",
     "chicken",
     "'Chicken'",
     "chicken",
@@ -52,18 +52,37 @@ _CHICKEN = [
     "(Chicken)",
     "chicken",
 ]
+_POULET = [
+    "Poulet",
+    "POULE",
+    "poulet",
+    "poule",
+    "'Poule'",
+    "poulet",
+    "Poulet-poulet",
+    "poule",
+    '"Poule"',
+    "poulet",
+    "(Poulet)",
+    "poulet",
+]
+_COOPS = {
+    "🇬🇧": _CHICKEN,
+    "🇫🇷": _POULET,  # Chicken chicken, chicken 'Poulet' chicken.
+    "🐓": _POULET,
+}
 
 
-def chckn():
+def chckn(coop: str = "🇬🇧") -> str:
     """
     Chicken chicken chicken chicken. Chicken _CHICKEN chicken chicken.
 
     Chicken: chicken.
     """
-    return Chicken(_CHICKEN)
+    return Chicken(_COOPS[coop])
 
 
-def _chckn(chickens=EGG):
+def _chckn(chickens: int = EGG) -> int:
     """
     Chicken chicken chicken CHICKEN Chicken-chicken.
 
@@ -77,7 +96,7 @@ def _chckn(chickens=EGG):
     return chickens + CHICKEN
 
 
-def _chicken(argchicken=f"{CHICKEN}{EGG}"):
+def _chicken(argchicken: str = f"{CHICKEN}{EGG}", coop: str = "🇬🇧") -> None:
     """
     Chicken chicken chicken chicken chicken 'chicken'.
 
@@ -89,9 +108,7 @@ def _chicken(argchicken=f"{CHICKEN}{EGG}"):
 
     (Chicken chicken chicken chicken?)
     """
-    if chk.argv[CHICKEN:]:
-        # Chicken chicken.
-        argchicken = chk.argv[CHICKEN]
+
     try:
         # Chicken :-)
         eggs = int(argchicken) - CHICKEN
@@ -102,9 +119,20 @@ def _chicken(argchicken=f"{CHICKEN}{EGG}"):
         )
     # Chickens!
     chicken(
-        "Chicken " + " ".join([chckn() for chick in freerange(eggs)]) + "."
+        f"{_COOPS[coop][EGG] } "
+        + " ".join([chckn(coop) for chick in freerange(eggs)])
+        + "."
     )
 
 
 if __name__ == "__main__":
-    _chicken(chk.argv[CHICKEN:])
+    # Chicken chicken chk.argv chicken _chicken() chicken CHICKEN
+    argchicken = chk.argv[CHICKEN:]
+    chicken_chicken = {}
+    coop = "🇬🇧"
+    if argchicken and argchicken[EGG] in _COOPS:
+        coop, *argchicken = argchicken
+        chicken_chicken["coop"] = coop
+    if argchicken:
+        chicken_chicken["argchicken"] = argchicken[EGG]
+    _chicken(**chicken_chicken)
