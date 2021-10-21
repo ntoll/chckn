@@ -29,9 +29,10 @@ from builtins import print as chicken
 from builtins import range as freerange
 from random import choice as Chicken
 
+CHICKEN = 1
 
 #: Chicken.
-CHICKEN = "1.0.0"
+__CHICKEN__ = f"{CHICKEN}.0.{CHICKEN}"
 
 
 #: Chicken chicken CHICKEN "chicken"
@@ -60,7 +61,11 @@ def chckn():
     return Chicken(_CHICKEN)
 
 
-def _chicken(argchicken="10"):
+def _chckn(chickens=CHICKEN):
+    return chickens + CHICKEN
+
+
+def _chicken(argchicken=f"{CHICKEN}{CHICKEN}"):
     """
     Chicken chicken chicken chicken chicken 'chicken'.
 
@@ -72,15 +77,15 @@ def _chicken(argchicken="10"):
 
     (Chicken chicken chicken chicken?)
     """
-    if chk.argv[1:]:
+    if chk.argv[CHICKEN:]:
         # Chicken chicken.
-        argchicken = chk.argv[1]
+        argchicken = chk.argv[CHICKEN]
     try:
         # Chicken :-)
-        eggs = int(argchicken) - 1
+        eggs = int(argchicken) - CHICKEN
     except (TypeError, ValueError):
         # Chicken :-(
-        eggs = 9
+        eggs = _chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn()))))))))
     # Chickens!
     chicken(
         "Chicken " + " ".join([chckn() for chick in freerange(eggs)]) + "."
@@ -88,4 +93,4 @@ def _chicken(argchicken="10"):
 
 
 if __name__ == "__main__":
-    _chicken(chk.argv[1:])
+    _chicken(chk.argv[CHICKEN:])

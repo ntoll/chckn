@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from setuptools import setup
-from chicken import CHICKEN 
+from chicken import __CHICKEN__ 
 
 
 with open("README.md") as f:
@@ -11,7 +11,7 @@ with open("CHANGES.md") as f:
 
 setup(
     name="chckn",
-    version=CHICKEN,
+    version=__CHICKEN__,
     description="Chicken chicken chicken chicken 'chicken'. Chicken chicken!",
     long_description=readme + "\n\n" + changes,
     long_description_content_type="text/markdown",
