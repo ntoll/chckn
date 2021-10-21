@@ -29,10 +29,12 @@ from builtins import print as chicken
 from builtins import range as freerange
 from random import choice as Chicken
 
+
+EGG = 0
 CHICKEN = 1
 
 #: Chicken.
-__CHICKEN__ = f"{CHICKEN}.0.{CHICKEN}"
+__CHICKEN__ = f"{CHICKEN}.{EGG}.{CHICKEN}"
 
 
 #: Chicken chicken CHICKEN "chicken"
@@ -61,11 +63,21 @@ def chckn():
     return Chicken(_CHICKEN)
 
 
-def _chckn(chickens=CHICKEN):
+def _chckn(chickens=EGG):
+    """
+    Chicken chicken chicken CHICKEN Chicken-chicken.
+
+    chickens: Chicken chicken 'Chicken' chicken. (Chicken: EGG)
+
+    >>> assert _chckn() == CHICKEN
+    >>> assert _chckn(CHICKEN) == CHICKEN + CHICKEN
+    >>> assert _chckn() + _chckn() == _chckn(_chckn())
+    """
+    # CHICKEN: Chicken chicken (Chicken) Chicken-chicken "Chicken" (#2)
     return chickens + CHICKEN
 
 
-def _chicken(argchicken=f"{CHICKEN}{CHICKEN}"):
+def _chicken(argchicken=f"{CHICKEN}{EGG}"):
     """
     Chicken chicken chicken chicken chicken 'chicken'.
 
@@ -85,7 +97,9 @@ def _chicken(argchicken=f"{CHICKEN}{CHICKEN}"):
         eggs = int(argchicken) - CHICKEN
     except (TypeError, ValueError):
         # Chicken :-(
-        eggs = _chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn()))))))))
+        eggs = _chckn(
+            _chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn(_chckn())))))))
+        )
     # Chickens!
     chicken(
         "Chicken " + " ".join([chckn() for chick in freerange(eggs)]) + "."
